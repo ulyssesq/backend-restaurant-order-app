@@ -1,0 +1,9 @@
+C:\Users\UlyssesQueiroz\source\repos\RestaurantOrderApp\RestaurantOrderApp.Domain\bin\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.deps.json
+C:\Users\UlyssesQueiroz\source\repos\RestaurantOrderApp\RestaurantOrderApp.Domain\bin\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.dll
+C:\Users\UlyssesQueiroz\source\repos\RestaurantOrderApp\RestaurantOrderApp.Domain\bin\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.pdb
+C:\Users\UlyssesQueiroz\source\repos\RestaurantOrderApp\RestaurantOrderApp.Domain\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.csprojAssemblyReference.cache
+C:\Users\UlyssesQueiroz\source\repos\RestaurantOrderApp\RestaurantOrderApp.Domain\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.AssemblyInfoInputs.cache
+C:\Users\UlyssesQueiroz\source\repos\RestaurantOrderApp\RestaurantOrderApp.Domain\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.AssemblyInfo.cs
+C:\Users\UlyssesQueiroz\source\repos\RestaurantOrderApp\RestaurantOrderApp.Domain\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\UlyssesQueiroz\source\repos\RestaurantOrderApp\RestaurantOrderApp.Domain\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.dll
+C:\Users\UlyssesQueiroz\source\repos\RestaurantOrderApp\RestaurantOrderApp.Domain\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.pdb
