@@ -30,6 +30,24 @@ namespace RestaurantOrderApp.Domain.Tests
         }
 
         [Test]
+        public void Night12Test()
+        {
+            #region Arrange
+            string input = "night, 1, 2";
+            bool outputExpected = true;
+            var validationService = new ValidationService();
+            #endregion
+
+            #region Act
+            var isValid = validationService.IsValid(input);
+            #endregion
+
+            #region Assert
+            Assert.AreEqual(outputExpected, isValid);
+            #endregion
+        }
+
+        [Test]
         public void EmptyTest()
         {
             #region Arrange
