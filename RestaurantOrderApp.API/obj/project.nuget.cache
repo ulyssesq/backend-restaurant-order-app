@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HKycEDOeBXr4TwJLyehSLWO/j657xTdX0voLtO1ky8PGWqTJbZD/TykEMeUtJmzcAjUC/f0zshuxdlSvs0mtKA==",
+  "dgSpecHash": "BlHZsX7Q33HrZioaEO1GQkvB/m2kTVll1CUSu1+x8ZHZiMe9lgqVHJHxhqLMOpRbNTpjENl3xE9NgQmX5o/8cA==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\RestaurantOrderApp.API.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\UlyssesQueiroz\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

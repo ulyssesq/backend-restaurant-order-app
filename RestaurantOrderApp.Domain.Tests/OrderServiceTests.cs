@@ -1,13 +1,15 @@
 using NUnit.Framework;
+using RestaurantOrderApp.Domain.Interfaces.Services;
 using RestaurantOrderApp.Domain.Services;
 
 namespace RestaurantOrderApp.Domain.Tests
 {
-    public class OrderServiceTests
+    public class OrderServiceTests : BaseTest
     {
         [SetUp]
         public void Setup()
         {
+            
         }
 
         [Test]
@@ -16,7 +18,7 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "morning, 1, 2, 3";
             string outputExpected = "eggs, toast, coffee";
-            var orderService = new OrderService();
+            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
@@ -34,7 +36,7 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "morning, 2, 1, 3";
             string outputExpected = "eggs, toast, coffee";
-            var orderService = new OrderService();
+            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
@@ -52,7 +54,7 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "morning, 1, 2, 3, 4";
             string outputExpected = "eggs, toast, coffee, error";
-            var orderService = new OrderService();
+            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
@@ -70,7 +72,7 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "morning, 1, 2, 3, 4";
             string outputExpected = "eggs, toast, coffee(x3)";
-            var orderService = new OrderService();
+            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
@@ -88,7 +90,7 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "night, 1, 2, 3, 4";
             string outputExpected = "steak, potato, wine, cake";
-            var orderService = new OrderService();
+            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
@@ -106,7 +108,7 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "night, 1, 2, 2, 4";
             string outputExpected = "steak, potato(x2), cake";
-            var orderService = new OrderService();
+            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
@@ -124,7 +126,7 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "night, 1, 2, 2, 4";
             string outputExpected = "steak, potato, wine, error";
-            var orderService = new OrderService();
+            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
@@ -142,7 +144,7 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "night, 1, 1, 2, 3, 5";
             string outputExpected = "steak, error";
-            var orderService = new OrderService();
+            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act

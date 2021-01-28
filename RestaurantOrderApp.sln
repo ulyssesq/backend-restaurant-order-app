@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantOrderApp.Domain",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantOrderApp.Domain.Tests", "RestaurantOrderApp.Domain.Tests\RestaurantOrderApp.Domain.Tests.csproj", "{ED134FBA-4FEB-4341-8A65-FCCAF299C3D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantOrderApp.Infra.CrossCutting", "RestaurantOrderApp.Infra.CrossCutting\RestaurantOrderApp.Infra.CrossCutting.csproj", "{8DF60508-76F3-437E-82A8-41BE840E387E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{ED134FBA-4FEB-4341-8A65-FCCAF299C3D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED134FBA-4FEB-4341-8A65-FCCAF299C3D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED134FBA-4FEB-4341-8A65-FCCAF299C3D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF60508-76F3-437E-82A8-41BE840E387E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF60508-76F3-437E-82A8-41BE840E387E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF60508-76F3-437E-82A8-41BE840E387E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF60508-76F3-437E-82A8-41BE840E387E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{CCBF686A-31E6-4353-91EE-DF6A6849E6F0} = {EBC9C7B7-96B8-4854-A509-8C3D9F2DCB1E}
 		{1B731D35-D4F1-4CB0-9DE6-D00D4CD25ABA} = {A88191D5-2DCD-498D-B53E-BC075E329FC8}
 		{ED134FBA-4FEB-4341-8A65-FCCAF299C3D2} = {A88191D5-2DCD-498D-B53E-BC075E329FC8}
+		{8DF60508-76F3-437E-82A8-41BE840E387E} = {B3984356-9C6D-4CB1-BA15-CD4E5EA995C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7136EC60-0450-49A6-876F-C8F8D59A08BC}

@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
       "RestaurantOrderApp.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -11,19 +20,59 @@
         "runtime": {
           "bin/placeholder/RestaurantOrderApp.Domain.dll": {}
         }
+      },
+      "RestaurantOrderApp.Infra.CrossCutting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "RestaurantOrderApp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RestaurantOrderApp.Infra.CrossCutting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestaurantOrderApp.Infra.CrossCutting.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "RestaurantOrderApp.Domain/1.0.0": {
       "type": "project",
       "path": "../RestaurantOrderApp.Domain/RestaurantOrderApp.Domain.csproj",
       "msbuildProject": "../RestaurantOrderApp.Domain/RestaurantOrderApp.Domain.csproj"
+    },
+    "RestaurantOrderApp.Infra.CrossCutting/1.0.0": {
+      "type": "project",
+      "path": "../RestaurantOrderApp.Infra.CrossCutting/RestaurantOrderApp.Infra.CrossCutting.csproj",
+      "msbuildProject": "../RestaurantOrderApp.Infra.CrossCutting/RestaurantOrderApp.Infra.CrossCutting.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "RestaurantOrderApp.Domain >= 1.0.0"
+      "RestaurantOrderApp.Domain >= 1.0.0",
+      "RestaurantOrderApp.Infra.CrossCutting >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -62,6 +111,9 @@
           "projectReferences": {
             "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj": {
               "projectPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj"
+            },
+            "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj": {
+              "projectPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj"
             }
           }
         }

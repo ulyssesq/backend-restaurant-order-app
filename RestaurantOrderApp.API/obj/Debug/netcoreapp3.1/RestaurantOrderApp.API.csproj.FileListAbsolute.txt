@@ -41,3 +41,6 @@ C:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.API\obj\Debug\netcor
 C:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.API\obj\Debug\netcoreapp3.1\RestaurantOrderApp.API.dll
 C:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.API\obj\Debug\netcoreapp3.1\RestaurantOrderApp.API.pdb
 C:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.API\obj\Debug\netcoreapp3.1\RestaurantOrderApp.API.genruntimeconfig.cache
+C:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.API\bin\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.dll
+C:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.API\bin\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.pdb

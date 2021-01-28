@@ -6,6 +6,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using RestaurantOrderApp.Domain.Interfaces.Services;
+using RestaurantOrderApp.Domain.Services;
+using RestaurantOrderApp.Infra.CrossCutting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +29,10 @@ namespace RestaurantOrderApp.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            DependencyInjectionConfig.Configure(services);
+            //services.AddTransient<IValidationService, ValidationService>()
+            //        .AddTransient<IOrderService, OrderService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

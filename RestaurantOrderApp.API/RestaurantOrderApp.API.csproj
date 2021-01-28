@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RestaurantOrderApp.Domain\RestaurantOrderApp.Domain.csproj" />
+    <ProjectReference Include="..\RestaurantOrderApp.Infra.CrossCutting\RestaurantOrderApp.Infra.CrossCutting.csproj" />
   </ItemGroup>
 
 

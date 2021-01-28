@@ -4,7 +4,7 @@ using System;
 
 namespace RestaurantOrderApp.Domain.Tests
 {
-    public class ValidationServiceTests
+    public class ValidationServiceTests : BaseTest
     {
         [SetUp]
         public void Setup()
