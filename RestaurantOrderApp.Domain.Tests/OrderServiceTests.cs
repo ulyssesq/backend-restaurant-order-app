@@ -3,7 +3,7 @@ using RestaurantOrderApp.Domain.Services;
 
 namespace RestaurantOrderApp.Domain.Tests
 {
-    public class OrderTests
+    public class OrderServiceTests
     {
         [SetUp]
         public void Setup()
