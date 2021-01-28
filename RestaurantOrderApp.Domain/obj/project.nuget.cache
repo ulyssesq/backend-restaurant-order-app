@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L+pbEspVwpd9CWP5rAaZ7d8lVLPGvHxbSKtDLC9iYkULdYBWuC/IqFuDdhLuA510x/FL0s70JTZRIeMo7+lbwQ==",
+  "dgSpecHash": "tXK4p1RZ0bR1skukq5UT5BD3gCMnVDly8jxv5BgbTLuBy1LXae3pD7E9rc5915UEtCbVvwYgJgKxsDb8Yy21xQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\UlyssesQueiroz\\source\\repos\\RestaurantOrderApp\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj",
+  "projectFilePath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "RestaurantOrderApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/RestaurantOrderApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestaurantOrderApp.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RestaurantOrderApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../RestaurantOrderApp.Domain/RestaurantOrderApp.Domain.csproj",
+      "msbuildProject": "../RestaurantOrderApp.Domain/RestaurantOrderApp.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "RestaurantOrderApp.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\UlyssesQueiroz\\.nuget\\packages\\": {},
@@ -15,11 +34,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\UlyssesQueiroz\\source\\repos\\RestaurantOrderApp\\RestaurantOrderApp.API\\RestaurantOrderApp.API.csproj",
+      "projectUniqueName": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\RestaurantOrderApp.API.csproj",
       "projectName": "RestaurantOrderApp.API",
-      "projectPath": "C:\\Users\\UlyssesQueiroz\\source\\repos\\RestaurantOrderApp\\RestaurantOrderApp.API\\RestaurantOrderApp.API.csproj",
+      "projectPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\RestaurantOrderApp.API.csproj",
       "packagesPath": "C:\\Users\\UlyssesQueiroz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\UlyssesQueiroz\\source\\repos\\RestaurantOrderApp\\RestaurantOrderApp.API\\obj\\",
+      "outputPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -40,7 +59,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj": {
+              "projectPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

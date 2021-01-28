@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UlyssesQueiroz\\source\\repos\\RestaurantOrderApp\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj": {}
+    "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UlyssesQueiroz\\source\\repos\\RestaurantOrderApp\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj": {
+    "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UlyssesQueiroz\\source\\repos\\RestaurantOrderApp\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj",
         "projectName": "RestaurantOrderApp.Domain",
-        "projectPath": "C:\\Users\\UlyssesQueiroz\\source\\repos\\RestaurantOrderApp\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj",
+        "projectPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj",
         "packagesPath": "C:\\Users\\UlyssesQueiroz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UlyssesQueiroz\\source\\repos\\RestaurantOrderApp\\RestaurantOrderApp.Domain\\obj\\",
+        "outputPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

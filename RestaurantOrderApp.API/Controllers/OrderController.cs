@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using RestaurantOrderApp.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,27 +20,9 @@ namespace RestaurantOrderApp.API.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public Order Get(string input)
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55)
-            })
-            .ToArray();
-        }
-
-        [HttpPut]
-        public IEnumerable<WeatherForecast> Put()
-        {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55)
-            })
-            .ToArray();
+            return new Order();
         }
     }
 }

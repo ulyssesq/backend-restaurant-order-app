@@ -13,9 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 Data", "4.1 Data", "{A0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 CrossCutting", "4.2 CrossCutting", "{B3984356-9C6D-4CB1-BA15-CD4E5EA995C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantOrderApp.API", "RestaurantOrderApp.API\RestaurantOrderApp.API.csproj", "{CCBF686A-31E6-4353-91EE-DF6A6849E6F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantOrderApp.API", "RestaurantOrderApp.API\RestaurantOrderApp.API.csproj", "{CCBF686A-31E6-4353-91EE-DF6A6849E6F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantOrderApp.Domain", "RestaurantOrderApp.Domain\RestaurantOrderApp.Domain.csproj", "{1B731D35-D4F1-4CB0-9DE6-D00D4CD25ABA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantOrderApp.Domain", "RestaurantOrderApp.Domain\RestaurantOrderApp.Domain.csproj", "{1B731D35-D4F1-4CB0-9DE6-D00D4CD25ABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantOrderApp.Domain.Tests", "RestaurantOrderApp.Domain.Tests\RestaurantOrderApp.Domain.Tests.csproj", "{ED134FBA-4FEB-4341-8A65-FCCAF299C3D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{1B731D35-D4F1-4CB0-9DE6-D00D4CD25ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B731D35-D4F1-4CB0-9DE6-D00D4CD25ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B731D35-D4F1-4CB0-9DE6-D00D4CD25ABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED134FBA-4FEB-4341-8A65-FCCAF299C3D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED134FBA-4FEB-4341-8A65-FCCAF299C3D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED134FBA-4FEB-4341-8A65-FCCAF299C3D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED134FBA-4FEB-4341-8A65-FCCAF299C3D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +46,7 @@ Global
 		{B3984356-9C6D-4CB1-BA15-CD4E5EA995C1} = {F1EE7C9D-3D88-462A-B979-1079D23E9C54}
 		{CCBF686A-31E6-4353-91EE-DF6A6849E6F0} = {EBC9C7B7-96B8-4854-A509-8C3D9F2DCB1E}
 		{1B731D35-D4F1-4CB0-9DE6-D00D4CD25ABA} = {A88191D5-2DCD-498D-B53E-BC075E329FC8}
+		{ED134FBA-4FEB-4341-8A65-FCCAF299C3D2} = {A88191D5-2DCD-498D-B53E-BC075E329FC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7136EC60-0450-49A6-876F-C8F8D59A08BC}
