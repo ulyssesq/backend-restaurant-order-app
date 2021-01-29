@@ -8,5 +8,6 @@ namespace RestaurantOrderApp.Domain.Entities
     {
         public int Number { get; set; }
         public int Quantity { get; set; }
+        public int Order { get; set; }
     }
 }
