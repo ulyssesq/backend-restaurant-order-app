@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tXK4p1RZ0bR1skukq5UT5BD3gCMnVDly8jxv5BgbTLuBy1LXae3pD7E9rc5915UEtCbVvwYgJgKxsDb8Yy21xQ==",
+  "dgSpecHash": "i46y74blcF19UFdff+lsy3PZSiUJmvhAVcBrFUFHLu8li3tj+P0pEEaIOFJtPPxlIJkPuh0KklfZW4eBj6sbNQ==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj",
+  "projectFilePath": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

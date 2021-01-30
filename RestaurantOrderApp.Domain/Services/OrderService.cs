@@ -10,15 +10,12 @@ namespace RestaurantOrderApp.Domain.Services
     public class OrderService : IOrderService
     {
         private IValidationService ValidationService;
+        private ISimplifyService SimplifyService;
 
-        public OrderService(IValidationService validationService)
+        public OrderService(IValidationService validationService, ISimplifyService simplifyService)
         {
             ValidationService = validationService;
-        }
-
-        private string Simplify(string input)
-        {
-            return input.Replace(" ", "").ToLower();
+            SimplifyService = simplifyService;
         }
 
         public Order Get(string input)
@@ -35,50 +32,11 @@ namespace RestaurantOrderApp.Domain.Services
             }
 
             // Simplify order - remove spaces and turn in lowercase
-            var inputSimplified = Simplify(input);
+            var inputSimplified = SimplifyService.Simplify(input);
 
             // Process order
-            var items = inputSimplified.Split(',').ToList();
-
-            var timeOfDay = items.First();
-
-            var orderNumbers = items.Take(1);
-            var dishes = new List<Dish>();
-
-            // percorre numeros
-            foreach (var number in orderNumbers)
-            {
-                var dish = dishes.GetByNumber(number);
-
-                // se não existe cria, se existe adiciona um no contador
-                if (dish != null)
-                {
-                    dish.Quantity++;
-                }
-                else
-                {
-                    dish = new Dish(number);
-                }
-
-                // validar com regras de negocio se ok contiua senão retorna error
-                // criar enumerador
-                if (timeOfDay == "night")
-                {
-                    // verifica regra da batata
-                }
-
-                if (timeOfDay == "morning")
-                {
-                    // verifica regra do coffee
-                }
-                
-                
-            }
-
-            // coloca em ordem // dish deve ter um metodo .ToString() nome e quantidade se for maior que um
-            var orderdDishes = dishes.OrderBy(c => c.Order).ToList();
-
-            order.Output = String.Join(',', orderdDishes.Select(c => c.ToString()).ToArray());
+            var OrderManager = new OrderManager();
+            order.Output = OrderManager.GetOutput(inputSimplified);
 
             return order;
         }

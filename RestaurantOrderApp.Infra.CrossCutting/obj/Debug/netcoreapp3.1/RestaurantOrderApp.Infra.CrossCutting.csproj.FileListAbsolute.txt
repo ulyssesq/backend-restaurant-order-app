@@ -10,3 +10,15 @@ C:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\o
 C:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.csproj.CopyComplete
 C:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.dll
 C:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.pdb
+D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\bin\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.deps.json
+D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\bin\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.dll
+D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\bin\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.pdb
+D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\bin\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.dll
+D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\bin\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.pdb
+D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.AssemblyInfoInputs.cache
+D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.AssemblyInfo.cs
+D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.csproj.CoreCompileInputs.cache
+D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.csproj.CopyComplete
+D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.dll
+D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.pdb
+D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Infra.CrossCutting\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Infra.CrossCutting.csprojAssemblyReference.cache

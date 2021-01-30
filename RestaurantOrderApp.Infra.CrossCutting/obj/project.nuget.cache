@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iAQu756X+t5Rzl4rOmZcZ5H6t+qXD5jprT3WLDDXCNBYNbnvohwfaRvmxtZLABfhCFh8p7nqehlBazpmhgE3KA==",
+  "dgSpecHash": "hLPiTLfMUYFZFBMwt7bOHT5NmdTZz4SJjZTUwq0gEezPFI9FK0batzkEVNl42HBdlUjU3x9vZL/OwwXVqtsrcA==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj",
+  "projectFilePath": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\UlyssesQueiroz\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
