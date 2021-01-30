@@ -36,9 +36,13 @@ namespace RestaurantOrderApp.Domain.Entities
             {
                 return Name;
             }
-            else
+            else if (CanRepeat)
             {
                 return $"{Name}(x{Quantity})";
+            }
+            else
+            {
+                return "error";
             }
         }
     }

@@ -12,9 +12,9 @@ namespace RestaurantOrderApp.Domain.Entities
         {
             switch (number)
             {
-                case "1": return new Coffee();
-                case "2": return new Eggs();
-                case "3": return new Toast();
+                case "1": return new Eggs();
+                case "2": return new Toast();
+                case "3": return new Coffee();
             }
 
             return new DishError();

@@ -70,7 +70,7 @@ namespace RestaurantOrderApp.Domain.Tests
         public void Morning12333Test()
         {
             #region Arrange
-            string input = "morning, 1, 2, 3, 4";
+            string input = "morning, 1, 2, 3, 3, 3";
             string outputExpected = "eggs, toast, coffee(x3)";
             var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion

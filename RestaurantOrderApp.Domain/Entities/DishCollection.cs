@@ -15,24 +15,29 @@ namespace RestaurantOrderApp.Domain.Entities
             Dishes = new List<DishBase>();
         }
 
-        public DishBase Add(DishBase dish)
+        public DishBase Add(DishBase newDish)
         {
-            if (Exists(dish))
+            if (Exists(newDish))
             {
+                var dish = Get(newDish);
                 dish.Increment();
             }
             else
             {
-
-                Dishes.Add(dish);
+                Dishes.Add(newDish);
             }
 
-            return dish;
+            return newDish;
         }
 
         private bool Exists(DishBase dish)
         {
             return Dishes.Any(d => d.DataType == dish.DataType);
+        }
+
+        private DishBase Get(DishBase dish)
+        {
+            return Dishes.First(d => d.DataType == dish.DataType);
         }
 
         public void Sort()
