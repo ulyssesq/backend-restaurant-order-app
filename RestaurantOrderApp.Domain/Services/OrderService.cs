@@ -1,9 +1,7 @@
 ﻿using RestaurantOrderApp.Domain.Entities;
+using RestaurantOrderApp.Domain.Interfaces.Entities;
 using RestaurantOrderApp.Domain.Interfaces.Services;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
+
 
 namespace RestaurantOrderApp.Domain.Services
 {
@@ -11,11 +9,13 @@ namespace RestaurantOrderApp.Domain.Services
     {
         private IValidationService ValidationService;
         private ISimplifyService SimplifyService;
+        private IOrderManager OrderManager;
 
-        public OrderService(IValidationService validationService, ISimplifyService simplifyService)
+        public OrderService(IValidationService validationService, ISimplifyService simplifyService, IOrderManager orderManager)
         {
             ValidationService = validationService;
             SimplifyService = simplifyService;
+            OrderManager = orderManager;
         }
 
         public Order Get(string input)
@@ -27,16 +27,17 @@ namespace RestaurantOrderApp.Domain.Services
 
             if (!ValidationService.IsValid(input))
             {
-                order.Output = "error";
-                return order;
+                var dishError = new DishError();
+                order.Output = dishError.ToString();
             }
+            else
+            {
+                // Simplify order - remove spaces and turn in lowercase
+                var inputSimplified = SimplifyService.Simplify(input);
 
-            // Simplify order - remove spaces and turn in lowercase
-            var inputSimplified = SimplifyService.Simplify(input);
-
-            // Process order
-            var OrderManager = new OrderManager();
-            order.Output = OrderManager.GetOutput(inputSimplified);
+                // Process order
+                order.Output = OrderManager.GetOutput(inputSimplified);
+            }
 
             return order;
         }

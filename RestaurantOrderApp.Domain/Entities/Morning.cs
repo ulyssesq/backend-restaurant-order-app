@@ -1,8 +1,4 @@
-﻿using RestaurantOrderApp.Domain.Entities.Dishes;
-using RestaurantOrderApp.Domain.Interfaces.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using RestaurantOrderApp.Domain.Interfaces.Entities;
 
 namespace RestaurantOrderApp.Domain.Entities
 {

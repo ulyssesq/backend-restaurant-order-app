@@ -24,4 +24,3 @@ D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Domain\obj\Debug\net
 D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Domain\bin\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.deps.json
 D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Domain\bin\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.dll
 D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Domain\bin\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.pdb
-D:\Projetos\backend-restaurant-order-app\RestaurantOrderApp.Domain\obj\Debug\netcoreapp3.1\RestaurantOrderApp.Domain.csprojAssemblyReference.cache

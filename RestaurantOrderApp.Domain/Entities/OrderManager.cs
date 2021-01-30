@@ -9,7 +9,7 @@ using System.Collections;
 
 namespace RestaurantOrderApp.Domain.Entities
 {
-    public class OrderManager
+    public class OrderManager : IOrderManager
     {
         public ITimeOfDay TimeOfDay { get; set; }
         public IDishCollection Dishes { get; set; }
