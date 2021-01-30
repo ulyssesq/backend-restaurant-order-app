@@ -42,7 +42,7 @@ namespace RestaurantOrderApp.Domain.Entities
 
         public override string ToString()
         {
-            return String.Join(',', Dishes.Select(c => c.ToString()).ToArray());
+            return String.Join(", ", Dishes.Select(c => c.ToString()).ToArray());
         }
     }
 }

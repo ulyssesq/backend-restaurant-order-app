@@ -27,7 +27,7 @@ namespace RestaurantOrderApp.Domain.Entities
             TimeOfDay = TimeOfDayFactory.GetInstance(items.First());
 
             // First is the time of day, so take it.
-            var orderNumbers = items.Take(1);
+            var orderNumbers = items.Skip(1);
 
             foreach (var number in orderNumbers)
             {

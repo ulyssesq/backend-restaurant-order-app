@@ -10,7 +10,8 @@ namespace RestaurantOrderApp.Infra.CrossCutting
         public static void Configure(IServiceCollection services)
         {
             services.AddTransient<IValidationService, ValidationService>()
-                    .AddTransient<IOrderService, OrderService>();
+                    .AddTransient<IOrderService, OrderService>()
+                    .AddTransient<ISimplifyService, SimplifyService>();
         }
     }
 }

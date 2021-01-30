@@ -12,8 +12,8 @@ namespace RestaurantOrderApp.Domain.Factories
         {
             switch (timeOfDay)
             {
-                case "Morning": return new Morning();
-                case "Night": return new Night();
+                case "morning": return new Morning();
+                case "night": return new Night();
             }
 
             throw new ArgumentException("Invalid Time of Day");

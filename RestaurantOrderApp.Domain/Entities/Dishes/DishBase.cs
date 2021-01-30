@@ -14,7 +14,7 @@ namespace RestaurantOrderApp.Domain.Entities
 
         public DishBase(DataType dataType, string name, bool canRepeat)
         {
-            Quantity = 0;
+            Quantity = 1;
             DataType = dataType;
             Name = name;
             CanRepeat = canRepeat;

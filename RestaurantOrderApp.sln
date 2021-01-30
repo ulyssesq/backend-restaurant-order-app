@@ -17,9 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantOrderApp.API", "R
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantOrderApp.Domain", "RestaurantOrderApp.Domain\RestaurantOrderApp.Domain.csproj", "{1B731D35-D4F1-4CB0-9DE6-D00D4CD25ABA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantOrderApp.Domain.Tests", "RestaurantOrderApp.Domain.Tests\RestaurantOrderApp.Domain.Tests.csproj", "{ED134FBA-4FEB-4341-8A65-FCCAF299C3D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantOrderApp.Domain.Tests", "RestaurantOrderApp.Domain.Tests\RestaurantOrderApp.Domain.Tests.csproj", "{ED134FBA-4FEB-4341-8A65-FCCAF299C3D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantOrderApp.Infra.CrossCutting", "RestaurantOrderApp.Infra.CrossCutting\RestaurantOrderApp.Infra.CrossCutting.csproj", "{8DF60508-76F3-437E-82A8-41BE840E387E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantOrderApp.Infra.CrossCutting", "RestaurantOrderApp.Infra.CrossCutting\RestaurantOrderApp.Infra.CrossCutting.csproj", "{8DF60508-76F3-437E-82A8-41BE840E387E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

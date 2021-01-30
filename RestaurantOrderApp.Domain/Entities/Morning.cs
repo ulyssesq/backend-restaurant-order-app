@@ -1,4 +1,5 @@
-﻿using RestaurantOrderApp.Domain.Interfaces.Entities;
+﻿using RestaurantOrderApp.Domain.Entities.Dishes;
+using RestaurantOrderApp.Domain.Interfaces.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,7 +17,7 @@ namespace RestaurantOrderApp.Domain.Entities
                 case "3": return new Toast();
             }
 
-            throw new ArgumentException("Invalid input");
+            return new DishError();
         }
     }
 }
