@@ -7,7 +7,7 @@ namespace RestaurantOrderApp.Domain.Interfaces.Entities
 {
     public interface IDishCollection
     {
-        DishBase Add(DishBase dish);
+        bool Add(DishBase dish);
 
         void Sort();
     }

@@ -124,7 +124,7 @@ namespace RestaurantOrderApp.Domain.Tests
         public void Night1235Test()
         {
             #region Arrange
-            string input = "night, 1, 2, 2, 4";
+            string input = "night, 1, 2, 3, 5";
             string outputExpected = "steak, potato, wine, error";
             var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion

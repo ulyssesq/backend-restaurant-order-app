@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using RestaurantOrderApp.Domain.Entities.Dishes;
 
 namespace RestaurantOrderApp.Domain.Entities
 {    
@@ -15,19 +16,31 @@ namespace RestaurantOrderApp.Domain.Entities
             Dishes = new List<DishBase>();
         }
 
-        public DishBase Add(DishBase newDish)
+        public bool Add(DishBase newDish)
         {
             if (Exists(newDish))
             {
-                var dish = Get(newDish);
-                dish.Increment();
+                return IncrementIfValid(newDish);
             }
             else
             {
                 Dishes.Add(newDish);
+                return true;
             }
+        }
 
-            return newDish;
+        private bool IncrementIfValid(DishBase newDish)
+        {
+            var dish = Get(newDish);
+            if (dish.Increment())
+            {
+                return true;
+            }
+            else
+            {
+                Dishes.Add(new DishError());
+                return false;
+            }
         }
 
         private bool Exists(DishBase dish)

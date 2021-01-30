@@ -25,9 +25,17 @@ namespace RestaurantOrderApp.Domain.Entities
             
         }
 
-        public void Increment()
+        public bool Increment()
         {
-            Quantity++;
+            if (CanRepeat)
+            {
+                Quantity++;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public override string ToString()
@@ -36,13 +44,9 @@ namespace RestaurantOrderApp.Domain.Entities
             {
                 return Name;
             }
-            else if (CanRepeat)
-            {
-                return $"{Name}(x{Quantity})";
-            }
             else
             {
-                return "error";
+                return $"{Name}(x{Quantity})";
             }
         }
     }

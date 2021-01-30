@@ -33,7 +33,10 @@ namespace RestaurantOrderApp.Domain.Entities
             {
                 var dish = TimeOfDay.GetDish(number);
 
-                Dishes.Add(dish);
+                if (!Dishes.Add(dish))
+                {
+                    break;
+                }
             }
 
             Dishes.Sort();
