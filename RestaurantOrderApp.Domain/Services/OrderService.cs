@@ -10,8 +10,8 @@ namespace RestaurantOrderApp.Domain.Services
         private readonly ISimplifyService _simplifyService;
         private readonly IValidationService _validationService;
 
-        public ITimeOfDay TimeOfDay { get; set; }
-        public IDishCollection Dishes { get; set; }
+        private ITimeOfDay TimeOfDay { get; set; }
+        private IDishCollection Dishes { get; set; }
 
         public OrderService(IValidationService validationService, ISimplifyService simplifyService)
         {
@@ -22,19 +22,12 @@ namespace RestaurantOrderApp.Domain.Services
 
         public Order Get(string input)
         {
-            return new Order()
-            {
-                Input = input,
-                Output = GetOutput(input)
-            };
-        }
+            string output;
 
-        private string GetOutput(string input)
-        {
             if (!_validationService.IsValid(input))
             {
                 var dishError = new DishError();
-                return dishError.ToString();
+                output = dishError.ToString();
             }
             else
             {
@@ -60,8 +53,10 @@ namespace RestaurantOrderApp.Domain.Services
 
                 Dishes.Sort();
 
-                return Dishes.ToString();
+                output = Dishes.ToString();
             }
+
+            return new Order(input, output);
         }
     }
 }
