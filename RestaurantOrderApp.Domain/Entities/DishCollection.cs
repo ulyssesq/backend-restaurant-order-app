@@ -1,11 +1,10 @@
 ﻿using RestaurantOrderApp.Domain.Interfaces.Entities;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 
 namespace RestaurantOrderApp.Domain.Entities
-{    
+{
     public class DishCollection : IDishCollection
     {
         private List<Dish> Dishes;

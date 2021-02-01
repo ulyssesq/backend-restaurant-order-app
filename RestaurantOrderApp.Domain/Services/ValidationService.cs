@@ -18,7 +18,5 @@ namespace RestaurantOrderApp.Domain.Services
                 return Regex.IsMatch(input, FullPattern, RegexOptions.IgnoreCase);
             }
         }
-    }
-
-    
+    }   
 }
