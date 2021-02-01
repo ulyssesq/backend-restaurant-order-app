@@ -1,12 +1,13 @@
 ﻿using RestaurantOrderApp.Domain.Entities;
 using RestaurantOrderApp.Domain.Interfaces.Entities;
+using RestaurantOrderApp.Domain.Interfaces.Factories;
 using System;
 
 namespace RestaurantOrderApp.Domain
 {
-    public class TimeOfDayFactory
+    public class TimeOfDayFactory : ITimeOfDayFactory
     {
-        public static ITimeOfDay GetInstance(string timeOfDay)
+        public ITimeOfDay GetInstance(string timeOfDay)
         {
             switch (timeOfDay)
             {
