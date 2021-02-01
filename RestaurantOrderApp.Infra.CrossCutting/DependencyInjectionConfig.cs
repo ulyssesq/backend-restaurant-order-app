@@ -14,7 +14,7 @@ namespace RestaurantOrderApp.Infra.CrossCutting
             services.AddTransient<IValidationService, ValidationService>()
                     .AddTransient<IOrderService, OrderService>()
                     .AddTransient<ISimplifyService, SimplifyService>()
-                    .AddTransient<IOrderManager, OrderManager>();
+                    .AddTransient<IOrderService, OrderService>();
         }
     }
 }

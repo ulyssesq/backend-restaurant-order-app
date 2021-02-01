@@ -1,45 +1,68 @@
 ﻿using RestaurantOrderApp.Domain.Entities;
+using RestaurantOrderApp.Domain.Factories;
 using RestaurantOrderApp.Domain.Interfaces.Entities;
 using RestaurantOrderApp.Domain.Interfaces.Services;
-
+using System.Linq;
 
 namespace RestaurantOrderApp.Domain.Services
 {
     public class OrderService : IOrderService
     {
-        private IValidationService ValidationService;
-        private ISimplifyService SimplifyService;
-        private IOrderManager OrderManager;
+        private readonly ISimplifyService _simplifyService;
+        private readonly IValidationService _validationService;
 
-        public OrderService(IValidationService validationService, ISimplifyService simplifyService, IOrderManager orderManager)
+        public ITimeOfDay TimeOfDay { get; set; }
+        public IDishCollection Dishes { get; set; }
+
+        public OrderService(IValidationService validationService, ISimplifyService simplifyService)
         {
-            ValidationService = validationService;
-            SimplifyService = simplifyService;
-            OrderManager = orderManager;
+            _simplifyService = simplifyService;
+            _validationService = validationService;
+            Dishes = new DishCollection();
         }
 
         public Order Get(string input)
         {
-            var order = new Order()
+            return new Order()
             {
-                Input = input
+                Input = input,
+                Output = GetOutput(input)
             };
+        }
 
-            if (!ValidationService.IsValid(input))
+        private string GetOutput(string input)
+        {
+            if (!_validationService.IsValid(input))
             {
                 var dishError = new DishError();
-                order.Output = dishError.ToString();
+                return dishError.ToString();
             }
             else
             {
                 // Simplify order - remove spaces and turn in lowercase
-                var inputSimplified = SimplifyService.Simplify(input);
+                var inputSimplified = _simplifyService.Simplify(input);
 
-                // Process order
-                order.Output = OrderManager.GetOutput(inputSimplified);
+                var items = inputSimplified.Split(',').ToList();
+
+                TimeOfDay = TimeOfDayFactory.GetInstance(items.First());
+
+                // First is the time of day, so take it.
+                var orderNumbers = items.Skip(1);
+
+                foreach (var number in orderNumbers)
+                {
+                    var dish = TimeOfDay.GetDish(number);
+
+                    if (!Dishes.Add(dish))
+                    {
+                        break;
+                    }
+                }
+
+                Dishes.Sort();
+
+                return Dishes.ToString();
             }
-
-            return order;
         }
     }
 }
