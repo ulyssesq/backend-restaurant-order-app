@@ -1,9 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using RestaurantOrderApp.Domain.Entities;
-using RestaurantOrderApp.Domain.Interfaces.Entities;
+using RestaurantOrderApp.Domain;
+using RestaurantOrderApp.Domain.Interfaces.Factories;
 using RestaurantOrderApp.Domain.Interfaces.Services;
 using RestaurantOrderApp.Domain.Services;
-using System;
 
 namespace RestaurantOrderApp.Infra.CrossCutting
 {
@@ -14,7 +13,8 @@ namespace RestaurantOrderApp.Infra.CrossCutting
             services.AddTransient<IValidationService, ValidationService>()
                     .AddTransient<IOrderService, OrderService>()
                     .AddTransient<ISimplifyService, SimplifyService>()
-                    .AddTransient<IOrderService, OrderService>();
+                    .AddTransient<IOrderService, OrderService>()
+                    .AddTransient<ITimeOfDayFactory, TimeOfDayFactory>();
         }
     }
 }
