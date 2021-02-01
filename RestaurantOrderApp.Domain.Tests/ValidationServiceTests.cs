@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using RestaurantOrderApp.Domain.Interfaces.Services;
 using RestaurantOrderApp.Domain.Services;
 using System;
 
@@ -6,9 +7,12 @@ namespace RestaurantOrderApp.Domain.Tests
 {
     public class ValidationServiceTests : BaseTest
     {
+        private IValidationService _validationService;
+
         [SetUp]
         public void Setup()
         {
+            _validationService = (IValidationService)ServiceProvider.GetService(typeof(IValidationService));
         }
 
         [Test]
@@ -17,11 +21,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "morning, 1, 2, 3";
             bool outputExpected = true;
-            var validationService = new ValidationService();
             #endregion
 
             #region Act
-            var isValid = validationService.IsValid(input);
+            var isValid = _validationService.IsValid(input);
             #endregion
 
             #region Assert
@@ -35,11 +38,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "night, 1, 2";
             bool outputExpected = true;
-            var validationService = new ValidationService();
             #endregion
 
             #region Act
-            var isValid = validationService.IsValid(input);
+            var isValid = _validationService.IsValid(input);
             #endregion
 
             #region Assert
@@ -53,11 +55,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = String.Empty;
             bool outputExpected = false;
-            var validationService = new ValidationService();
             #endregion
 
             #region Act
-            var isValid = validationService.IsValid(input);
+            var isValid = _validationService.IsValid(input);
             #endregion
 
             #region Assert
@@ -71,11 +72,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = " ";
             bool outputExpected = false;
-            var validationService = new ValidationService();
             #endregion
 
             #region Act
-            var isValid = validationService.IsValid(input);
+            var isValid = _validationService.IsValid(input);
             #endregion
 
             #region Assert
@@ -89,11 +89,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "morning";
             bool outputExpected = false;
-            var validationService = new ValidationService();
             #endregion
 
             #region Act
-            var isValid = validationService.IsValid(input);
+            var isValid = _validationService.IsValid(input);
             #endregion
 
             #region Assert
@@ -107,11 +106,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "afternoon, 1, 2";
             bool outputExpected = false;
-            var validationService = new ValidationService();
             #endregion
 
             #region Act
-            var isValid = validationService.IsValid(input);
+            var isValid = _validationService.IsValid(input);
             #endregion
 
             #region Assert

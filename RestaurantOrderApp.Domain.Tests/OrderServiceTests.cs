@@ -6,10 +6,12 @@ namespace RestaurantOrderApp.Domain.Tests
 {
     public class OrderServiceTests : BaseTest
     {
+        private IOrderService _orderService;
+
         [SetUp]
         public void Setup()
         {
-            
+            _orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
         }
 
         [Test]
@@ -18,11 +20,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "morning, 1, 2, 3";
             string outputExpected = "eggs, toast, coffee";
-            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
-            var order = orderService.Get(input);
+            var order = _orderService.Get(input);
             #endregion
 
             #region Assert
@@ -36,11 +37,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "morning, 2, 1, 3";
             string outputExpected = "eggs, toast, coffee";
-            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
-            var order = orderService.Get(input);
+            var order = _orderService.Get(input);
             #endregion
 
             #region Assert
@@ -54,11 +54,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "morning, 1, 2, 3, 4";
             string outputExpected = "eggs, toast, coffee, error";
-            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
-            var order = orderService.Get(input);
+            var order = _orderService.Get(input);
             #endregion
 
             #region Assert
@@ -72,11 +71,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "morning, 1, 2, 3, 3, 3";
             string outputExpected = "eggs, toast, coffee(x3)";
-            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
-            var order = orderService.Get(input);
+            var order = _orderService.Get(input);
             #endregion
 
             #region Assert
@@ -90,11 +88,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "night, 1, 2, 3, 4";
             string outputExpected = "steak, potato, wine, cake";
-            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
-            var order = orderService.Get(input);
+            var order = _orderService.Get(input);
             #endregion
 
             #region Assert
@@ -108,11 +105,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "night, 1, 2, 2, 4";
             string outputExpected = "steak, potato(x2), cake";
-            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
-            var order = orderService.Get(input);
+            var order = _orderService.Get(input);
             #endregion
 
             #region Assert
@@ -126,11 +122,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "night, 1, 2, 3, 5";
             string outputExpected = "steak, potato, wine, error";
-            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
-            var order = orderService.Get(input);
+            var order = _orderService.Get(input);
             #endregion
 
             #region Assert
@@ -144,11 +139,10 @@ namespace RestaurantOrderApp.Domain.Tests
             #region Arrange
             string input = "night, 1, 1, 2, 3, 5";
             string outputExpected = "steak, error";
-            var orderService = (IOrderService)ServiceProvider.GetService(typeof(IOrderService));
             #endregion
 
             #region Act
-            var order = orderService.Get(input);
+            var order = _orderService.Get(input);
             #endregion
 
             #region Assert
