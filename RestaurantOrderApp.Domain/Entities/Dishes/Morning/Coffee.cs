@@ -5,7 +5,7 @@ using RestaurantOrderApp.Domain.Enum;
 
 namespace RestaurantOrderApp.Domain.Entities
 {
-    public class Coffee : DishBase
+    public class Coffee : Dish
     {
         public Coffee() : base(DataType.Drink, "coffee", true)
         {

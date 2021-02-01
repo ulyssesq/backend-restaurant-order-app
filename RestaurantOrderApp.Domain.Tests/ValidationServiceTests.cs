@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
 using RestaurantOrderApp.Domain.Interfaces.Services;
-using RestaurantOrderApp.Domain.Services;
 using System;
 
 namespace RestaurantOrderApp.Domain.Tests

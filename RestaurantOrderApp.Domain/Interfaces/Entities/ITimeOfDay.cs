@@ -7,6 +7,6 @@ namespace RestaurantOrderApp.Domain.Interfaces.Entities
 {
     public interface ITimeOfDay
     {
-        DishBase GetDish(string number);
+        Dish GetDish(string number);
     }
 }

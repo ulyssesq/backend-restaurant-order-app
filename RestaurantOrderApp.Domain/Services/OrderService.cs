@@ -1,5 +1,4 @@
 ﻿using RestaurantOrderApp.Domain.Entities;
-using RestaurantOrderApp.Domain.Factories;
 using RestaurantOrderApp.Domain.Interfaces.Entities;
 using RestaurantOrderApp.Domain.Interfaces.Services;
 using System.Linq;

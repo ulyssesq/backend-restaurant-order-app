@@ -1,10 +1,8 @@
 ﻿using RestaurantOrderApp.Domain.Entities;
 using RestaurantOrderApp.Domain.Interfaces.Entities;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace RestaurantOrderApp.Domain.Factories
+namespace RestaurantOrderApp.Domain
 {
     public class TimeOfDayFactory
     {

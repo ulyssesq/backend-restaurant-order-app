@@ -8,14 +8,14 @@ namespace RestaurantOrderApp.Domain.Entities
 {    
     public class DishCollection : IDishCollection
     {
-        private List<DishBase> Dishes;
+        private List<Dish> Dishes;
 
         public DishCollection()
         {
-            Dishes = new List<DishBase>();
+            Dishes = new List<Dish>();
         }
 
-        public bool Add(DishBase newDish)
+        public bool Add(Dish newDish)
         {
             if (Exists(newDish))
             {
@@ -28,7 +28,7 @@ namespace RestaurantOrderApp.Domain.Entities
             }
         }
 
-        private bool IncrementIfValid(DishBase newDish)
+        private bool IncrementIfValid(Dish newDish)
         {
             var dish = Get(newDish);
             if (dish.Increment())
@@ -42,12 +42,12 @@ namespace RestaurantOrderApp.Domain.Entities
             }
         }
 
-        private bool Exists(DishBase dish)
+        private bool Exists(Dish dish)
         {
             return Dishes.Any(d => d.DataType == dish.DataType);
         }
 
-        private DishBase Get(DishBase dish)
+        private Dish Get(Dish dish)
         {
             return Dishes.First(d => d.DataType == dish.DataType);
         }

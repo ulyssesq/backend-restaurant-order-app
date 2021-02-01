@@ -4,7 +4,7 @@ namespace RestaurantOrderApp.Domain.Entities
 {
     public class Morning : ITimeOfDay
     {
-        public DishBase GetDish(string number)
+        public Dish GetDish(string number)
         {
             switch (number)
             {
