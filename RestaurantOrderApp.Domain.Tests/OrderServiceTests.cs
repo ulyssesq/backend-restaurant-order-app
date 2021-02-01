@@ -148,5 +148,39 @@ namespace RestaurantOrderApp.Domain.Tests
             Assert.AreEqual(outputExpected, order.Output);
             #endregion
         }
+
+        [Test]
+        public void Night1SentitiveCaseTest()
+        {
+            #region Arrange
+            string input = "NIGHT, 1";
+            string outputExpected = "steak";
+            #endregion
+
+            #region Act
+            var order = _orderService.Get(input);
+            #endregion
+
+            #region Assert
+            Assert.AreEqual(outputExpected, order.Output);
+            #endregion
+        }
+
+        [Test]
+        public void NightAtLeastOneDishTest()
+        {
+            #region Arrange
+            string input = "night";
+            string outputExpected = "error";
+            #endregion
+
+            #region Act
+            var order = _orderService.Get(input);
+            #endregion
+
+            #region Assert
+            Assert.AreEqual(outputExpected, order.Output);
+            #endregion
+        }
     }
 }
