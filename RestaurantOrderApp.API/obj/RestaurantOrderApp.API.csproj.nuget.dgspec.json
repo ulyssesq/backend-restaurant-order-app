@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\RestaurantOrderApp.API.csproj": {}
+    "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\RestaurantOrderApp.API.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\RestaurantOrderApp.API.csproj": {
+    "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\RestaurantOrderApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\RestaurantOrderApp.API.csproj",
+        "projectUniqueName": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\RestaurantOrderApp.API.csproj",
         "projectName": "RestaurantOrderApp.API",
-        "projectPath": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\RestaurantOrderApp.API.csproj",
-        "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\obj\\",
+        "projectPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\RestaurantOrderApp.API.csproj",
+        "packagesPath": "C:\\Users\\UlyssesQueiroz\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\UlyssesQueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -28,11 +33,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj": {
-                "projectPath": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj"
+              "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj": {
+                "projectPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj"
               },
-              "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj": {
-                "projectPath": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj"
+              "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj": {
+                "projectPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj"
               }
             }
           }
@@ -64,22 +69,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj": {
+    "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj",
         "projectName": "RestaurantOrderApp.Domain",
-        "projectPath": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj",
-        "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\obj\\",
+        "projectPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\UlyssesQueiroz\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\UlyssesQueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -118,22 +128,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj": {
+    "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj",
+        "projectUniqueName": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj",
         "projectName": "RestaurantOrderApp.Infra.CrossCutting",
-        "projectPath": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\obj\\",
+        "projectPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\UlyssesQueiroz\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\UlyssesQueiroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -146,8 +161,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj": {
-                "projectPath": "D:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj"
+              "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj": {
+                "projectPath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain\\RestaurantOrderApp.Domain.csproj"
               }
             }
           }
@@ -182,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
