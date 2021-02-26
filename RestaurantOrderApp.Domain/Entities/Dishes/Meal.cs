@@ -2,14 +2,14 @@
 
 namespace RestaurantOrderApp.Domain.Entities
 {
-    public class Dish
+    public class Meal
     {
         public int Quantity { get; set; }
         public DataType DataType { get; set; }
         public string Name { get; set; }
         public bool CanRepeat { get; set; }
 
-        public Dish(DataType dataType, string name, bool canRepeat)
+        public Meal(DataType dataType, string name, bool canRepeat)
         {
             Quantity = 1;
             DataType = dataType;
@@ -17,7 +17,7 @@ namespace RestaurantOrderApp.Domain.Entities
             CanRepeat = canRepeat;
         }
 
-        public Dish(DataType dataType, string name) : this(dataType, name, false)
+        public Meal(DataType dataType, string name) : this(dataType, name, false)
         {
             
         }

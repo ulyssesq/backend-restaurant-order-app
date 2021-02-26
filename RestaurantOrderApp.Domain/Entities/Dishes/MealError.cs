@@ -4,9 +4,9 @@ using System.Text;
 
 namespace RestaurantOrderApp.Domain.Entities
 {
-    public class DishError : Dish
+    public class MealError : Meal
     {
-        public DishError() : base(Enum.DataType.Error, "error")
+        public MealError() : base(Enum.DataType.Error, "error")
         {
 
         }

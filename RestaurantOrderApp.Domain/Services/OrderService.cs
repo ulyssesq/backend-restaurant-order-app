@@ -13,14 +13,14 @@ namespace RestaurantOrderApp.Domain.Services
         private readonly ITimeOfDayFactory _timeOfDayFactory;
 
         private ITimeOfDay TimeOfDay;
-        private IDishCollection Dishes;
+        private IMealCollection Meals;
 
         public OrderService(IValidationService validationService, ISimplifyService simplifyService, ITimeOfDayFactory timeOfDayFactory)
         {
             _simplifyService = simplifyService;
             _validationService = validationService;
             _timeOfDayFactory = timeOfDayFactory;
-            Dishes = new DishCollection();
+            Meals = new MealCollection();
         }
 
         public Order Get(string input)
@@ -29,8 +29,8 @@ namespace RestaurantOrderApp.Domain.Services
 
             if (!_validationService.IsValid(input))
             {
-                var dishError = new DishError();
-                output = dishError.ToString();
+                var mealError = new MealError();
+                output = mealError.ToString();
             }
             else
             {
@@ -46,17 +46,17 @@ namespace RestaurantOrderApp.Domain.Services
 
                 foreach (var number in orderNumbers)
                 {
-                    var dish = TimeOfDay.GetDish(number);
+                    var meal = TimeOfDay.GetMeal(number);
 
-                    if (!Dishes.Add(dish))
+                    if (!Meals.Add(meal))
                     {
                         break;
                     }
                 }
 
-                Dishes.Sort();
+                Meals.Sort();
 
-                output = Dishes.ToString();
+                output = Meals.ToString();
             }
 
             return new Order(input, output);

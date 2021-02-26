@@ -1,13 +1,10 @@
 ﻿using RestaurantOrderApp.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace RestaurantOrderApp.Domain.Interfaces.Entities
 {
-    public interface IDishCollection
+    public interface IMealCollection
     {
-        bool Add(Dish dish);
+        bool Add(Meal meal);
 
         void Sort();
     }

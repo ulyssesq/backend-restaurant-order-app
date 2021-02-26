@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "u/bRFjkQjUuUqyPg9GLpk5Z1GfwNkkakzRZ9PJP00bwU+Ynw9RlolKPxlq+BQuVYiK+Qc8Evfml85rENPjzJcg==",
+  "dgSpecHash": "iUMbKacRZ5waPO3+JSnxjJ3t/SWynWzhZDy9gOUFlBV5DuwQipL2lsrj9CVe+4iAFUTlkar90F7VSrQtfjjwzA==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Domain.Tests\\RestaurantOrderApp.Domain.Tests.csproj",
   "expectedPackageFiles": [

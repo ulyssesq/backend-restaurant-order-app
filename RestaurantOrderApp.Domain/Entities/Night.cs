@@ -4,7 +4,7 @@ namespace RestaurantOrderApp.Domain.Entities
 {
     public class Night : ITimeOfDay
     {
-        public Dish GetDish(string number)
+        public Meal GetMeal(string number)
         {
             switch (number)
             {
@@ -14,7 +14,7 @@ namespace RestaurantOrderApp.Domain.Entities
                 case "4": return new Cake();
             }
 
-            return new DishError();
+            return new MealError();
         }
     }
 }

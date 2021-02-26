@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iAQu756X+t5Rzl4rOmZcZ5H6t+qXD5jprT3WLDDXCNBYNbnvohwfaRvmxtZLABfhCFh8p7nqehlBazpmhgE3KA==",
+  "dgSpecHash": "uRYfnpf0H0JN+N9ifutgwKOfIhfFiktenT5DJqAamID6qay+xRbLyx3MDjsJ0h+vtGShQl6H+Va6gC1yrXNkHA==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\backend-restaurant-order-app\\RestaurantOrderApp.Infra.CrossCutting\\RestaurantOrderApp.Infra.CrossCutting.csproj",
   "expectedPackageFiles": [
